@@ -11,8 +11,9 @@ def create_project_hash
   result = {}
 
   projects.each{ |project|
-    result[project] = {}
-    
+    title = project.css("h2.bbcard_name strong a").text
+    result[title.to_sym] = {}
+
   }
   # title: project.css("h2.bbcard_name strong a").text
   # image link: project.css("div.project-thumbnail a img").attribute("src").value
