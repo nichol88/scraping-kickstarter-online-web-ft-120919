@@ -15,5 +15,3 @@ def create_project_hash
   # location: project.css("li a").text.strip
   # percent_funded: project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
 end
-
-create_project_hash
